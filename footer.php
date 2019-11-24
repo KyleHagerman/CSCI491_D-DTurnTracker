@@ -3,7 +3,7 @@
     </div>
     <div class='clear'></div>
         <footer>
-            <p>Copyright No one cuz this website aint gettin finished</p>
+            <p>Copyright 2019</p>
         </footer>
         </div>
     </body>

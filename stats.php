@@ -25,7 +25,7 @@ echo <<<_END
         
         <div>
         <label for='char_name'>Character Name</label>
-        <input type='text id='char_name' name='char_name' placeholder='Llewyn' required>
+        <input type='text' id='char_name' name='char_name' placeholder='Llewyn' required>
         <label for='player_name'>Player Name</label>
         <input type='text' id='player_name' name='player_name' placeholder='John Smith'>
         </div><br>
@@ -33,6 +33,7 @@ echo <<<_END
         <div>
         <label for='class'>Class</label>
         <select id='class' name="class">
+            <option value="null">N/A</option>
             <option value="barbarian">Barbarian</option>
             <option value="bard">Bard</option>
             <option value="cleric">Cleric</option>
@@ -49,11 +50,12 @@ echo <<<_END
         
         <label for='monster_type'>Monster Type</label>
         <select id='monster_type' name="monster_type">
+            <option value="null">N/A</option>
             <option value="aberration">Aberration</option>
             <option value="beast">Beast</option>
             <option value="celestial">Celestial</option>
             <option value="construct">Construct</option>
-            <option value="dragon">Elemental</option>
+            <option value="dragon">Dragon</option>
             <option value="elemental">Elemental</option>
             <option value="fey">Fey</option>
             <option value="fiend">Fiend</option>
@@ -130,7 +132,7 @@ echo <<<_END
         </div>
         
         <p>
-            <input type="submit" value="Create Character">
+            <input type="submit" id="char_submit" value="Create Character">
         </p>
     </fieldset>
     </form>
