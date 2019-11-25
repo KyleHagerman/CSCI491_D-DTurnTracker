@@ -1,3 +1,4 @@
+<!-- This header needs to be removed when moving to the final site-->
 <!DOCTYPE html>
 <html>
     
@@ -32,7 +33,7 @@ echo <<<_END
         
         <div>
         <label for='class'>Class</label>
-        <select id='class' name="class">
+        <select class='drop' id='class' name="class">
             <option value="null">N/A</option>
             <option value="barbarian">Barbarian</option>
             <option value="bard">Bard</option>
@@ -49,7 +50,7 @@ echo <<<_END
         </select>
         
         <label for='monster_type'>Monster Type</label>
-        <select id='monster_type' name="monster_type">
+        <select class='drop' id='monster_type' name="monster_type">
             <option value="null">N/A</option>
             <option value="aberration">Aberration</option>
             <option value="beast">Beast</option>
@@ -101,11 +102,13 @@ echo <<<_END
         </div><br><br>
         
         Character Image:
-        <input type='file' name='image' size='14'><br><br>
+        <input type='file' name='char_img' id='char_img' class='char_img'>
+        <label for='char_img'>Choose a file</label>
+        <br><br>
         
         <div>
         <label for='align'>Alignment</label>
-        <select id='align' name="align">
+        <select class = 'drop' id='align' name="align">
             <option value="lawG">Lawful Good</option>
             <option value="neutG">Neutral Good</option>
             <option value="chaG">Chaotic Good</option>
@@ -132,7 +135,7 @@ echo <<<_END
         </div>
         
         <p>
-            <input type="submit" id="char_submit" value="Create Character">
+            <input type="submit" id="char_submit" value="CREATE CHARACTER">
         </p>
     </fieldset>
     </form>

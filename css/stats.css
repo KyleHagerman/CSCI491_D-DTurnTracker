@@ -3,6 +3,11 @@
     border: 1px solid black;
     overflow: hidden;
 }
+
+fieldset{
+   border: 2px groove crimson;
+}
+
 #character_form{
     display:inline-block;
     float: left;
@@ -17,8 +22,33 @@
     overflow:hidden;
 }
 
-input[type=text]:focus{
-    background-color: lightblue;
+.drop{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+textarea{
+    border-radius: 5px;
+    border: 1px solid gray;
+    resize: none;
+}
+
+textarea:focus{
+    outline:none;
+    border: 1px solid crimson;
+}
+
+.drop:focus, input:focus{
+    outline: none;
+    border: 1px solid crimson;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 input[type=submit]{
@@ -36,5 +66,27 @@ input[type=submit]{
 input[type=submit]:hover{
     cursor: pointer;
     background-color: rgb(190,10,30);
+}
 
+.char_img{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.char_img + label{
+    font-weight: 700;
+    background-color: crimson;
+    color: #fff;
+    display:inline-block;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.char_img:focus + label, .char_img + label:hover{
+    background-color: rgb(190,10,30);
 }
